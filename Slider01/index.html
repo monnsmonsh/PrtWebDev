@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Slider 01</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <br>
+    <br>
+    <section class="slider-container">
+        <div class="slider-image">
+            <div class="slider-img">
+                <img src="src/img/slider01.png" alt="1"/>
+                <h1>RENGOKU </h1>
+                <div class="details">
+                    <p>Hashira | KNY</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="src/img/slider02.png" alt="2"/>
+                <h1>KAKASHI </h1>
+                <div class="details">
+                    <p>Joing | NARUTO</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="src/img/slider03.png" alt="3"/>
+                <h1>REM</h1>
+                <div class="details">
+                    <p>Maid | Re:Zero</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="src/img/slider04.png" alt="4"/>
+                <h1>NARUTO</h1>
+                <div class="details">
+                    <p>Genin | NARUTO</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="src/img/slider05.png" alt="5"/>
+                <h1>Anya</h1>
+                <div class="details">
+                    <p>Esper | SpyXFamily</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="src/img/slider06.png" alt="6"/>
+                <h1>VEGETA</h1>
+                <div class="details">
+                    <p>PRINCE | DBS</p>
+                </div>
+            </div>
+            <div class="slider-img">
+                <img src="src/img/slider07.png" alt="7"/>
+                <h1>LEVY</h1>
+                <div class="details">
+                    <p>CAPITAN | SNK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--function active img slider-->
+    <script>
+        $(document).ready(function () {
+          $(".slider-img").on("click", function () {
+            $(".slider-img").not(this).removeClass("active");
+            $(this).toggleClass("active");
+          });
+        });
+    </script>
+    
+</body>
+</html>
